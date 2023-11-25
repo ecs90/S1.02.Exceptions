@@ -1,8 +1,8 @@
 package n1exercici1;
 
 public class Producte {
-    float   preu;
-    String  nom;
+    private float   preu;
+    private String  nom;
 
     public Producte(float preu, String nom) {
         this.preu = preu;

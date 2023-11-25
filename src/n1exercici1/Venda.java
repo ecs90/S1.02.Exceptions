@@ -3,14 +3,14 @@ package n1exercici1;
 import java.util.List;
 
 public class Venda {
-    List<Producte> lista;
-    float       preuTotal = 0;
+    private List<Producte> lista;
+    private float       preuTotal = 0;
 
     public Venda(List<Producte> lista) {
         this.lista = lista;
     }
 
-    void    calcularTotal() throws VendaBuidaException {
+    protected void    calcularTotal() throws VendaBuidaException {
         try
         {
             if (this.lista.isEmpty())
